@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+div#page {
+  width: 100%;
+  padding: 10% 10%;
+  background-color: rgb(253, 223, 188);
+}
+
+div#central{
+  background-color: white;
+}
+
+aside {
+  background-color: white;
+  width: 25%;
+  position: absolute;
+  right: 0;
+}
+
+
+nav {
+  background-color: white;
+  width: 25%;
+  position: absolute;
+  left: 0;
+}
+
+main {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+}
+
+
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: min-content;
+
+}

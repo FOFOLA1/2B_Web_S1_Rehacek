@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin: 5px 30px;
+}
+
+li:hover {
+  background-color: orange;
+}
+
+li:first-of-type::before {
+  content: "🌟";
+}
+
+.hotovo {
+  text-decoration: line-through;
+  color: red;
+}

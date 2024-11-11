@@ -1,0 +1,30 @@
+nav#main-menu {
+    width: 100%;
+    background-color: rgb(114, 114, 231); /* Set the background color for the entire nav */
+    height: 52px; /* Set a specific height */
+}
+
+nav#main-menu ul {
+    padding: 0;
+    width: 100%;
+}
+
+nav#main-menu ul li {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(114, 114, 231);
+    border-right: 2px solid rgb(53, 53, 53);
+    margin-left: -4px;
+}
+
+nav#main-menu ul li.active {
+  background-color: rgb(56, 56, 136);
+}
+
+nav#main-menu ul li a {
+    display: inline-block;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
