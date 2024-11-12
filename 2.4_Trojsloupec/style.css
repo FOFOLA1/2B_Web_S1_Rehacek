@@ -3,46 +3,52 @@ html {
   width: 100%;
 }
 
-header {
-  text-align: center;
+body {
+  background-color: rgb(253, 223, 188);
+  padding: 20px 50px;
 }
 
 div#page {
-  width: 100%;
-  padding: 10% 10%;
-  background-color: rgb(253, 223, 188);
-}
-
-div#central{
   background-color: white;
+  border: 1px solid black;
 }
 
-aside {
-  background-color: white;
-  width: 25%;
-  position: absolute;
-  right: 0;
+header {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
-
-
-nav {
-  background-color: white;
-  width: 25%;
-  position: absolute;
-  left: 0;
-}
-
-main {
-  background-color: white;
-  width: 50%;
-  height: 100%;
-}
-
-
 
 footer {
   text-align: center;
-  width: 100%;
-  height: min-content;
+  padding: 10px;
+  border-top: 1px solid black;
+  color:darkgrey
+}
 
+div#central {
+  overflow: hidden;
+}
+
+div#central nav {
+  width: 25%;
+  display: block;
+  padding: calc(10%/7);
+  float: left;
+}
+
+div#central main {
+  width: 40%;
+  padding: calc(10%/7);
+  float: left;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+}
+
+div#central aside {
+  width: 25%;
+  display: block;
+  padding: calc(10%/7);
+  float: right;
 }
