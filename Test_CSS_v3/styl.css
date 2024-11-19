@@ -1,0 +1,114 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    width: 100%;
+}
+
+nav {
+    background-color: royalblue;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    text-align: center;
+    margin-left: -7px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: royalblue;
+    background-color: white;
+    font-weight: bold;
+}
+
+header {
+    margin-top: 65px;
+    background-color: white;
+}
+
+header img {
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+main {
+    padding: 1em;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+}
+
+main section {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+main section p {
+    display: block;
+
+}
+
+section p::first-letter {
+    color: royalblue;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+section#history {
+    text-align: center;
+    
+}
+
+section#history div#blok {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+section#history div#blok h2:first-of-type {
+    float: left;
+}
+
+section#history div#blok p:first-of-type {
+    float: left;
+}
+
+section#history div#blok p {
+    display: inline-block;
+    text-align: left;
+}
+
+footer {
+    background-color: royalblue;
+    color: white;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: -7px;
+
+}
+
+footer p::after {
+    content: "";
+    background-image: "img/ibm_icon.png";
+}
