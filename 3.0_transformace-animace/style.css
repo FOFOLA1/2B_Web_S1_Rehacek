@@ -1,0 +1,30 @@
+#box {
+    background-color: red;
+    transition: 2s all;
+}
+
+#box:hover {
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+@keyframes barva {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: green;
+        transform: translateX(300px);
+    }
+
+}
+
+div {
+    height: 50px;
+    width: 50px;
+}
+
+#box2 {
+    background-color: yellow;
+    animation: barva 2s;
+}

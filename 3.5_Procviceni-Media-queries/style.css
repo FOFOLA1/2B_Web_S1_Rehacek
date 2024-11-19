@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  #pro-velke {
+    display: inline-block;
+  }
+  #pro-male, #pro-stredni {
+    display: none;
+  }
+
+  * {
+    font-size: 16pt;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  #pro-stredni {
+    display: inline-block;
+  }
+  #pro-male, #pro-velke {
+    display: none;
+  }
+
+  * {
+    font-size: 14pt;
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #pro-male {
+    display: inline-block;
+  }
+  #pro-stredni, #pro-velke {
+    display: none;
+  }
+
+  * {
+    font-size: 12pt;
+    background-color: rgb(0, 0, 77);
+  }
+}
+
+@media print {
+  * {
+    font-family: serif;
+    color: black;
+    background-color: white;
+  }
+}
