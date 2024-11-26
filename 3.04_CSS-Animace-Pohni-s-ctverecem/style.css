@@ -18,14 +18,22 @@ body {
   height: 50px;
   background-color: #3498db;
   position: absolute;
-  animation: anim 2s infinite alternate linear;
+  animation: anim 2s infinite linear;
+  
 }
 
 @keyframes anim {
-  from {
-    
+  75% {
+    transform: translate(0px, 200px);
   }
-  to {
-    transform: translateY(400px);
+  50% {
+    transform: translate(200px, 200px);
   }
+  25% {
+    transform: translate(200px, 0px);
+  }
+  0% {
+    transform: translate(0px, 0px);
+  }
+
 }
