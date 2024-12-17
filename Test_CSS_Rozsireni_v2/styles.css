@@ -1,0 +1,200 @@
+/* Reset */
+body, h1, h2, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    border: 2px solid #333;
+    width: 100px;
+}
+
+header nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+
+/* Main */
+main {
+    text-align: center;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+.sekce {
+    padding: 10px;
+}
+
+.zalozky li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.gallery img {
+   display: block;
+   border: 2px solid black;
+}
+
+
+#black {
+    background-color: black;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+
+
+header nav ul {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 100px;
+    grid-auto-flow: row;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+section#life {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#life div.sekce {
+    width: 500px;
+}
+
+ul.zalozky {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+ul.zalozky li {
+    list-style: none;
+}
+
+section#influence {
+    border: 1px dashed black;
+}
+
+section#influence ul ul {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-auto-flow: row;
+    
+}
+
+section#influence ul ul li {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid black;
+    text-align: start;
+    padding-left: 10px;
+}
+
+section#influence ul li {
+    list-style: none;
+}
+
+section#photo div.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#photo div.gallery img {
+    display: inline;
+}
+
+div#black img {
+    animation: anim alternate 10s infinite;
+}
+
+@keyframes anim {
+    0% {
+      opacity: 100%;
+  
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+
+@media screen and (max-width: 980px) {
+    ul.zalozky {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section#life div.sekce {
+        width: 300px;
+    }
+
+    section#void {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav ul {
+        display: grid;
+        grid-template-columns: unset;
+        gap: 10px;
+        grid-auto-flow: column;
+    }
+    
+    header nav ul li {
+        display: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+}
