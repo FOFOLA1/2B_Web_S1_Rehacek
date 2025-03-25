@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Vytvořte objekt karta7, který bude obsahovat položku 
+        //    nazevKarty, ve které bude uložena hodnota "sedmička".
+        function Karta(nazev) {
+            this.nazevKarty = nazev;
+            this.vyssiKarta = null;
+            this.nizsiKarta = null;
+        }
+
+        let nazvy = ["sedmička", "osmička", "devítka", "desítka", "spodek", "svršek", "král", "eso"];
+        let karty = [];
+        for (let i = 0; i < nazvy.length; i++) {
+            karty[i] = new Karta(nazvy[i]);
+        }
+
+        for (let i = 0; i < nazvy.length-1; i++) {
+            karty[i].vyssiKarta = karty[i+1];
+            karty[i+1].nizsiKarta = karty[i];
+        }
+
+        let karta7 = karty[0];
+        let karta8 = karty[1];
+        let karta9 = karty[2];
+        let karta10 = karty[3];
+        let kartaSpodek = karty[4];
+        let kartaSvrsek = karty[5];
+        let kartaKral = karty[6];
+        let kartaEso = karty[7];
+
+
+
+        // 2. Vytvořte stejným způsobem "osmičku" (proměnná karta8) a nastavte:
+        //
+        // * Sedmičce položku vyssiKarta, která bude odkazovat na osmičku
+        // * Osmičce položku nizsiKarta, která bude odkazovat na sedmičku
+
+
+
+
+        // 3. Zopakujte pro zbývajících šest výšek karet. (…, kartaSpodek, …, kartaEso)
+
+
+
+
+        // 4. Zalogujte do konzole objekt karta10. Jak se konzole 
+        // vypořádá se zpětným odkazem? (Nelze kontrolovat automaticky)
+
+        console.log(karta10);
+    </script>
+</body>
+</html>

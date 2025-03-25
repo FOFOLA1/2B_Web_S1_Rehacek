@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+  <html lang="cs">
+    <head>
+      <meta charset="utf-8"/>
+      <title>O mně</title>
+    </head>
+    <body>
+      <h1>O mně</h1>
+      
+      <ul>
+        <li>Přezdívka: <span id="nickname"></span></li>
+        <li>Záliby:  <span id="favorites"></span></li>
+        <li>Odkud jsem: <span id="hometown"></span></li>
+      </ul>
+      <script>
+          let body = document.getElementsByTagName("body")[0];
+          body.style.fontFamily = "Aral, sans-serif";
+
+          let info = body.getElementsByTagName("li");
+          let data = ["przdivka", "zaliby", "odkud jsem"];
+          for (let i = 0; i < info.length; i++) {
+            let span = info[i].getElementsByTagName("span")[0];
+            span.textContent = data[i];
+
+            info[i].classList.add("list-item");
+          }
+
+          let head = document.getElementsByTagName("head")[0];
+          let style = document.createElement("style");
+          style.textContent = ".list-item { color: red; }";
+          head.appendChild(style);
+      </script>
+    </body>
+  </html>
